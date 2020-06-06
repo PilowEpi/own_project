@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculatrice / Syteme de Queue</title>
+    </head>
+    <body>
+        <h2>Calculatrice</h2>
+        <br/>
+        <textarea id="calcul" name="calcul" rows="1" cols="20"></textarea>
+        <br/>
+        <input type="submit" value="Submit">
+    </body>
+    <script>
+        document.getElementById("submit").addEventListener('click', calcul);
+        function calcul() {
+            var text_calc = document.getElementById("calcul").value;
+                ws = new WebSocket('ws://localhost:8888/ws')
+        }
+    </script>
+</html>
